@@ -30,7 +30,7 @@ public class CityController {
 	}
 
 	@RequestMapping("/{countryCode}/list")
-	public List<City> findCitiesByCC(@PathVariable("countryCode") String countryCode) {
+	public List<City> findCitiesByCountryCode(@PathVariable("countryCode") String countryCode) {
 
 		List<City> cityList = cityRepo.findByCountryCode(countryCode);
 		return cityList;
